@@ -1,35 +1,8 @@
 {
-  "_from": "pentcloud-angular-js-request",
-  "_id": "pentcloud-angular-js-request@1.0.0",
-  "_inBundle": false,
-  "_integrity": "sha1-OaQGsgShrpZgNUhdrW9Ss1G7Yao=",
-  "_location": "/pentcloud-angular-js-request",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "pentcloud-angular-js-request",
-    "name": "pentcloud-angular-js-request",
-    "escapedName": "pentcloud-angular-js-request",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "http://npm.pentcloud.com/pentcloud-angular-js-request/-/pentcloud-angular-js-request-1.0.0.tgz",
-  "_shasum": "39a406b204a1ae966035485dad6f52b351bb61aa",
-  "_spec": "pentcloud-angular-js-request",
-  "_where": "/Users/diego/pentcloud/localizame-frontend-socket",
-  "author": {
-    "name": "Erick Ruano"
-  },
-  "bundleDependencies": false,
+  "author": "Erick Ruano",
   "dependencies": {
-    "angular": "^1.5.8",
-    "pentcloud-js-request": "^1.0.0"
+    "@pentcloud/js-request": "^1.3.0",
+    "angular": "^1.5.8"
   },
   "deprecated": false,
   "description": "Angular wrapper for Js request library.",
@@ -46,18 +19,18 @@
     "run-sequence": "^1.2.2"
   },
   "directories": {
-    "doc": "docs",
-    "test": "test"
+    "doc": "docs"
   },
   "license": "MIT",
   "main": "dist/",
-  "name": "pentcloud-angular-js-request",
+  "name": "@pentcloud/angular-js-request",
   "repository": {
     "type": "git",
-    "url": "https://git.pentcloud.com/pentcloud/pentcloud-angular-js-request.git"
+    "url": "https://github.com/pentcloud/angular-js-request"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "keywords": []
 }
