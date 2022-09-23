@@ -1,0 +1,1 @@
+var module = angular.module("pentcloud-angular-js-request", []);

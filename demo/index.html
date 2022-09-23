@@ -1,0 +1,33 @@
+<html ng-app="demo">
+
+<head>
+</head>
+<body ng-controller="demoController">
+	
+	<div>{{hello}}</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../node_modules/angular/angular.min.js"></script>
+
+<script src="../node_modules/persist-js/persist-min.js"></script>
+<script src="../node_modules/jsoncomp/versions/jsonc.min.js"></script>
+<script src="../node_modules/pentcloud-js-db/dist/js-db-min.js"></script>
+
+<script src="../node_modules/pentcloud-js-request/dist/js-request.js"></script>
+<script src="../dist/pentcloud-angular-js-request-min.js"></script>
+
+<script>
+	var app = angular.module('demo', ["pentcloud-angular-js-request"]);
+
+	app.controller('demoController', function($scope, pentcloudAngularRequest){
+		$scope.hello = "hw";
+
+		pentcloudAngularRequest.get('http://pentcloud.com:4000/users/509/steps').then(function(res){
+			$scope.hello = res;
+			$scope.$apply();
+		});
+	})
+</script>
+
+</body>
+</html>
